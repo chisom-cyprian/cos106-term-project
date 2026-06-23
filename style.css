@@ -279,13 +279,14 @@ a:hover {
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
-/* ---------- Dual Video Dashboard Layout Grid ---------- */
+/* ---------- Vertical Video Stack Layout Grid ---------- */
 .video-grid {
   display: grid;
-  grid-template-columns: 1fr; /* Changes layout from 2 columns to 1 column, separating them into rows */
-  gap: 2rem;                 /* Increases the space/gap between the two video cards */
+  grid-template-columns: 1fr !important; /* Enforces single column display on all viewports */
+  gap: 2.5rem !important;                 /* Separates the layout containers cleanly with spacious breathing room */
   margin-top: 1.5rem;
 }
+
 .video-grid .video-workspace {
   max-width: 100%; 
   margin-top: 0;
@@ -339,8 +340,8 @@ a:hover {
 .video-workspace__wrapper {
   position: relative;
   width: 100%;
-  height: 240px; 
-  background: #f1f5f9; /* Smooth placeholder frame color for light mode */
+  height: 380px;              /* Amplified height configuration since videos are now beautifully showcased on rows */
+  background: #f1f5f9; 
   border-radius: calc(var(--radius) - 2px);
   overflow: hidden;
   border: 1px solid var(--border);
@@ -458,7 +459,7 @@ input:focus, textarea:focus {
   box-shadow: 0 0 6px #10b981;
 }
 
-/* ---------- Updated Mobile Responsive Code ---------- */
+/* ---------- Bulletproof Mobile Responsive Framework ---------- */
 @media (max-width: 760px) {
   .shell { 
     flex-direction: column; 
@@ -467,23 +468,25 @@ input:focus, textarea:focus {
   .sidebar { 
     width: 100%; 
     height: auto; 
-    position: sticky;        /* Keeps it elegantly stuck to the top */
-    top: 0;                 /* Pins it to the very top edge of the mobile screen */
+    position: sticky;        
+    top: 0;                 
     border-right: none; 
     border-bottom: 1px solid var(--border); 
     padding: 1.5rem; 
-    background: var(--bg-raised);
-    
-    /* THE ULTIMATE FIX: Forces the navbar to stay in front of videos and text cards */
-    z-index: 9999 !important; 
+    background: #ffffff !important;   /* Solid white color overlay prevents content backgrounds bleeding through */
+    z-index: 9999 !important;         /* Ultimate priority level layout override */
   }
   
-  /* Forces the content block to stay behind the mobile menu layer */
+  /* Pushes content layout wrapper backward out of the header sticky path bounds */
   .main {
     position: relative;
-    z-index: 1;
+    z-index: 1 !important;
   }
   
+  .video-workspace__wrapper {
+    height: 230px;                    /* Scales height beautifully to remain natural on mobile viewing panes */
+  }
+
   .sidebar__role { 
     margin-bottom: 1rem; 
   }
