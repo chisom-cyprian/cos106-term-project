@@ -460,7 +460,6 @@ input:focus, textarea:focus {
 }
 
 /* ---------- Updated Mobile Responsive Code ---------- */
-
 @media (max-width: 760px) {
   .shell { 
     flex-direction: column; 
@@ -469,13 +468,21 @@ input:focus, textarea:focus {
   .sidebar { 
     width: 100%; 
     height: auto; 
-    position: relative;     /* FIX: Turns off sticky floating so content won't clip through it */
-    top: auto;              /* Resets desktop positioning anchor */
+    position: sticky;        /* Keeps it elegantly stuck to the top */
+    top: 0;                 /* Pins it to the very top edge of the mobile screen */
     border-right: none; 
     border-bottom: 1px solid var(--border); 
     padding: 1.5rem; 
     background: var(--bg-raised);
-    z-index: 10;
+    
+    /* THE ULTIMATE FIX: Forces the navbar to stay in front of videos and text cards */
+    z-index: 9999 !important; 
+  }
+  
+  /* Forces the content block to stay behind the mobile menu layer */
+  .main {
+    position: relative;
+    z-index: 1;
   }
   
   .sidebar__role { 
