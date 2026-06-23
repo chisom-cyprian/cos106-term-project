@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chisom Cyprian — Backend &amp; AI Engineering</title>
+    <meta
+      name="description"
+      content="Portfolio of Chisom Cyprian, software engineering student building backend systems and applied AI projects."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topnav">
+      <div class="topnav__inner">
+        <a href="index.html" class="brand"
+          >chisom<span class="dot">.</span>dev</a
+        >
+        <button class="navtoggle" aria-expanded="false">Menu</button>
+        <nav>
+          <ul class="navlinks">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero wide">
+        <span class="kicker">Software engineer in training</span>
+        <h1>I build backend systems and applied&nbsp;AI tools, end to end.</h1>
+        <p class="hero__proof">
+          Currently studying Software Engineering at Miva Open University. Most
+          recently shipped <strong>a retrieval-augmented chatbot</strong> using
+          FastAPI, LangChain, and ChromaDB — one of several projects I take from
+          idea to a live, working build.
+        </p>
+        <div class="hero__cta">
+          <a href="projects.html" class="btn btn--primary">View projects</a>
+          <a href="contact.html" class="btn">Get in touch</a>
+        </div>
+        <div class="signal-row">
+          <a
+            href="https://github.com/chisom-cyprian"
+            target="_blank"
+            rel="noopener"
+            >github.com/chisom-cyprian</a
+          >
+          <span>Lagos, Nigeria</span>
+          <span>Open to remote internships</span>
+        </div>
+      </section>
+
+      <section class="buildlog wide">
+        <h2>Build log</h2>
+        <p class="sub">
+          A running record of what I've shipped, in the order I built it.
+        </p>
+
+        <div class="log-entry">
+          <div class="log-entry__date">Jun 2026</div>
+          <div class="log-entry__body">
+            <h3>RAG document chatbot</h3>
+            <p>
+              A retrieval-augmented chatbot that answers questions over uploaded
+              documents, deployed end to end.
+            </p>
+            <ul class="stack-list">
+              <li>FastAPI</li>
+              <li>LangChain</li>
+              <li>ChromaDB</li>
+              <li>Gemini API</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="log-entry">
+          <div class="log-entry__date">2026</div>
+          <div class="log-entry__body">
+            <h3>JPMC transaction processing</h3>
+            <p>
+              A simulated transaction processing system built for the JPMorgan
+              Chase Advanced Software Engineering program.
+            </p>
+            <ul class="stack-list">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>Backend Systems</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="log-entry">
+          <div class="log-entry__date">2025</div>
+          <div class="log-entry__body">
+            <h3>CS50 AI portfolio</h3>
+            <p>
+              Twelve projects covering search, knowledge representation,
+              optimization, and machine learning, consolidated into one
+              repository.
+            </p>
+            <ul class="stack-list">
+              <li>Python</li>
+              <li>scikit-learn</li>
+              <li>Neural networks</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="audio-container">
+          <span class="audio-label">Ambient Track:</span>
+          <audio
+            src="alex-morgan-chill-545522.mp3"
+            controls
+            loop
+            class="ambient-player"
+          ></audio>
+        </div>
+        <hr class="footer-divider" />
+        <span>© 2026 Chisom Cyprian</span>
+        <span>Built with HTML, CSS &amp; JavaScript for COS 106</span>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planner - Chisom Cyprian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topnav">
+      <div class="topnav__inner">
+        <a href="index.html" class="brand"
+          >chisom<span class="dot">.</span>dev</a
+        >
+        <button class="navtoggle" aria-expanded="false">Menu</button>
+        <nav>
+          <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html" aria-current="page">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="read">
+      <div class="page-head">
+        <span class="kicker">Academic Planner</span>
+        <h1>Task tracker</h1>
+        <p class="lede">
+          Add tasks, mark them done, delete what's no longer relevant.
+          Everything runs client-side in this browser tab.
+        </p>
+      </div>
+
+      <section class="section" style="border-top: none; padding-top: 0">
+        <form class="planner-input" id="task-form">
+          <label for="task-input" style="position: absolute; left: -9999px"
+            >New task</label
+          >
+          <input
+            type="text"
+            id="task-input"
+            placeholder="e.g. Finish COS 106 term project"
+            autocomplete="off"
+          />
+          <button type="submit" class="btn btn--primary">Add task</button>
+        </form>
+
+        <ul class="task-list" id="task-list" aria-live="polite"></ul>
+
+        <p class="planner-empty" id="empty-state">
+          No tasks yet — add your first one above.
+        </p>
+
+        <div class="planner-stats" id="stats" style="display: none">
+          <span><strong id="stat-total">0</strong> total</span>
+          <span><strong id="stat-done">0</strong> completed</span>
+          <span><strong id="stat-pending">0</strong> pending</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>© 2026 Chisom Cyprian</span>
+        <span>Built with HTML, CSS &amp; JavaScript for COS 106</span>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+    <script src="planner.js"></script>
+  </body>
+</html>

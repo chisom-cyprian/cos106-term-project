@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Chisom Cyprian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght=500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="sidebar__brand">chisom<span>.</span>dev</div>
+        <div class="sidebar__role">Backend &amp; AI Engineer</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="sidebar__footer">COS 106 Build</div>
+      </aside>
+
+      <main class="main page">
+        <div class="breadcrumb">
+          <span class="seg">workspace</span> / <span class="seg">pages</span> /
+          <span class="cur">about.html</span>
+        </div>
+
+        <div class="hero">
+          <div style="flex: 1; min-width: 280px">
+            <span class="eyebrow">About</span>
+            <h1>HOW I GOT HERE, AND WHERE I'M HEADED</h1>
+            <p class="lede">
+              Educational Background, what I'm working toward, and the tools I
+              reach for.
+            </p>
+          </div>
+          <img src="profile.jpg" alt="Chisom Cyprian" class="hero__photo" />
+        </div>
+        <section class="section">
+          <h2>Beyond the Screen</h2>
+          <p>
+            Two distinct passions driving my focus and energy outside of
+            software architecture.
+          </p>
+
+          <!-- Dual Video Dashboard Grid -->
+          <div class="video-grid">
+            <!-- Video Card 1: Space Engineering Hobby -->
+            <div class="video-workspace">
+              <div class="video-workspace__meta">
+                <span class="video-workspace__status-icon"></span>
+                <span class="video-workspace__filename">Space Video .mp4</span>
+                <span class="video-workspace__badge">NEW_HOBBY</span>
+              </div>
+
+              <div class="video-workspace__wrapper">
+                <!-- Removed autoplay and muted so you can check the audio natively -->
+                <video controls preload="metadata">
+                  <source src="Space Video .mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <p class="video-workspace__caption">
+                <strong>Space Engineering:</strong> A new hobby I absolutely
+                fell in love with. I enjoy diving deep into orbital mechanics,
+                trajectory mapping, and studying how software automation
+                controls aerospace hardware.
+              </p>
+            </div>
+
+            <!-- Video Card 2: Manchester United Passion -->
+            <div class="video-workspace">
+              <div class="video-workspace__meta">
+                <span
+                  class="video-workspace__status-icon"
+                  style="background-color: #da291c; box-shadow: 0 0 8px #da291c"
+                ></span>
+                <span class="video-workspace__filename">Club Video.mp4</span>
+                <span
+                  class="video-workspace__badge"
+                  style="color: #da291c; background: rgba(218, 41, 28, 0.1)"
+                  >MUFC_FAITHFUL</span
+                >
+              </div>
+
+              <div class="video-workspace__wrapper">
+                <!-- Removed autoplay and muted so you can check the audio natively -->
+                <video controls preload="metadata">
+                  <source src="Club Video.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <p class="video-workspace__caption">
+                <strong>Manchester United:</strong> A die-hard fan through and
+                through. Nothing matches the absolute adrenaline, tactical
+                depth, and legacy of supporting United on match days.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Educational background</h2>
+          <p>
+            I'm a Software Engineering student at Miva Open University, expected
+            to graduate in December 2028. My coursework covers web technologies,
+            object-oriented programming, and core computer science fundamentals,
+            which I pair with self-directed study in AI and backend engineering.
+          </p>
+          <p>
+            I built my early programming foundations through freeCodeCamp data
+            structures, OOP, lambda functions, string manipulation, and
+            debugging before specializing further into backend and AI work.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Where I'm headed</h2>
+          <p>
+            I'm building toward backend and AI engineering roles. Most of my
+            project work centers on Python FastAPI for APIs, LangChain for AI
+            application logic, and vector databases like ChromaDB for retrieval
+            systems. I'm also learning JavaScript and Node.js so I can work
+            comfortably across the stack.
+          </p>
+          <p>
+            Longer term, I'm interested in working internationally, and I'm
+            actively researching graduate study and remote internship paths to
+            get there.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Technical skills</h2>
+          <div class="grid grid--2">
+            <div class="card">
+              <h3>Languages &amp; frameworks</h3>
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">HTML / CSS</span>
+            </div>
+            <div class="card">
+              <h3>AI / ML &amp; tooling</h3>
+              <span class="tag">LangChain</span>
+              <span class="tag">ChromaDB</span>
+              <span class="tag">Gemini API</span>
+              <span class="tag">n8n</span>
+              <span class="tag">Git / GitHub</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Outside of code</h2>
+          <ul>
+            <li>
+              Designing automation workflows in n8n gym tracking, AI voice
+              concierge agents, and similar small systems
+            </li>
+            <li>
+              Competitive programming practice through LeetCode and NeetCode 250
+            </li>
+            <li>
+              Reading up on cloud architecture and system design as I build
+              toward larger projects
+            </li>
+            <li>
+              Networking with people building in tech, on LinkedIn and beyond
+            </li>
+          </ul>
+        </section>
+
+        <footer
+          class="site-footer"
+          style="
+            border-top: 1px dashed var(--border);
+            margin-top: 4rem;
+            padding-top: 1.5rem;
+            padding-left: 0;
+          "
+        >
+          <span
+            >© 2026 Chisom Cyprian Built with HTML, CSS &amp; JavaScript for COS
+            106</span
+          >
+        </footer>
+      </main>
+    </div>
+
+    <script src="site.js"></script>
+  </body>
+</html>

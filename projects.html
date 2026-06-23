@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Chisom Cyprian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topnav">
+      <div class="topnav__inner">
+        <a href="index.html" class="brand"
+          >chisom<span class="dot">.</span>dev</a
+        >
+        <button class="navtoggle" aria-expanded="false">Menu</button>
+        <nav>
+          <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wide">
+      <div class="page-head">
+        <span class="kicker">Projects</span>
+        <h1>Selected work</h1>
+        <p class="lede">
+          Three projects that reflect the backend and AI engineering work I
+          focus on, all pushed to GitHub.
+        </p>
+      </div>
+
+      <div class="projects-list">
+        <article class="project-row">
+          <div class="project-row__index">01 — Applied AI</div>
+          <div>
+            <h3>RAG Document Chatbot</h3>
+            <p>
+              A retrieval-augmented generation chatbot that answers questions
+              over uploaded documents. Built with FastAPI on the backend,
+              LangChain for the retrieval pipeline, ChromaDB as the vector
+              store, and the Google Gemini API for generation, with a vanilla JS
+              frontend.
+            </p>
+            <ul class="stack-list">
+              <li>FastAPI</li>
+              <li>LangChain</li>
+              <li>ChromaDB</li>
+              <li>Gemini API</li>
+            </ul>
+            <div class="project-row__links">
+              <a
+                href="https://github.com/chisom-cyprian/rag-document-chatbot"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub →</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-row">
+          <div class="project-row__index">02 — AI Fundamentals</div>
+          <div>
+            <h3>CS50 AI Project Portfolio</h3>
+            <p>
+              All twelve CS50 AI with Python projects consolidated into a single
+              public repository — search, knowledge representation,
+              optimization, machine learning, and neural networks, including
+              Traffic (97% accuracy) and Crossword (25/25).
+            </p>
+            <ul class="stack-list">
+              <li>Python</li>
+              <li>Machine Learning</li>
+              <li>Search &amp; Logic</li>
+            </ul>
+            <div class="project-row__links">
+              <a
+                href="https://github.com/chisom-cyprian/cs50ai"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub →</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-row">
+          <div class="project-row__index">03 — Enterprise Simulation</div>
+          <div>
+            <h3>JPMC Transaction Processing</h3>
+            <p>
+              A simulated transaction processing system built as part of the
+              JPMorgan Chase Advanced Software Engineering program, using Java
+              and Spring Boot to model real backend banking workflows.
+            </p>
+            <ul class="stack-list">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>Backend Systems</li>
+            </ul>
+            <div class="project-row__links">
+              <a
+                href="https://github.com/chisom-cyprian/jpmc-transaction-processing"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub →</a
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <section class="section">
+        <h2>At a glance</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Domain</th>
+              <th>Core stack</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>RAG Document Chatbot</td>
+              <td class="dim">Applied AI / backend</td>
+              <td class="dim">FastAPI, LangChain, ChromaDB</td>
+              <td>Deployed</td>
+            </tr>
+            <tr>
+              <td>CS50 AI Portfolio</td>
+              <td class="dim">AI fundamentals</td>
+              <td class="dim">Python, scikit-learn</td>
+              <td>Complete</td>
+            </tr>
+            <tr>
+              <td>JPMC Transaction Processing</td>
+              <td class="dim">Enterprise simulation</td>
+              <td class="dim">Java, Spring Boot</td>
+              <td>Complete</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>© 2026 Chisom Cyprian</span>
+        <span>Built with HTML, CSS &amp; JavaScript for COS 106</span>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+  </body>
+</html>
