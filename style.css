@@ -282,11 +282,10 @@ a:hover {
 /* ---------- Dual Video Dashboard Layout Grid ---------- */
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: var(--gap);
+  grid-template-columns: 1fr; /* Changes layout from 2 columns to 1 column, separating them into rows */
+  gap: 2rem;                 /* Increases the space/gap between the two video cards */
   margin-top: 1.5rem;
 }
-
 .video-grid .video-workspace {
   max-width: 100%; 
   margin-top: 0;
