@@ -1,130 +1,196 @@
 <!doctype html>
 <html lang="en">
-  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chisom Cyprian — Backend &amp; AI Engineering</title>
-    <meta
-      name="description"
-      content="Portfolio of Chisom Cyprian, software engineering student building backend systems and applied AI projects."
-    />
+    <title>About — Chisom Cyprian</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght=500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="topnav">
-      <div class="topnav__inner">
-        <a href="index.html" class="brand"
-          >chisom<span class="dot">.</span>dev</a
-        >
-        <button class="navtoggle" aria-expanded="false">Menu</button>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="sidebar__brand">chisom<span>.</span>dev</div>
+        <div class="sidebar__role">Backend &amp; AI Engineer</div>
         <nav>
-          <ul class="navlinks">
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="about.html">About</a></li>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="planner.html">Planner</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-      </div>
-    </header>
+        <div class="sidebar__footer">COS 106 Build</div>
+      </aside>
 
-    <main>
-      <section class="hero wide">
-        <span class="kicker">Software engineer in training</span>
-        <h1>I build backend systems and applied&nbsp;AI tools, end to end.</h1>
-        <p class="hero__proof">
-          Currently studying Software Engineering at Miva Open University. Most
-          recently shipped <strong>a retrieval-augmented chatbot</strong> using
-          FastAPI, LangChain, and ChromaDB one of several projects I take from
-          idea to a live, working build.
-        </p>
-        <div class="hero__cta">
-          <a href="projects.html" class="btn btn--primary">View projects</a>
-          <a href="contact.html" class="btn">Get in touch</a>
+      <main class="main page">
+        <div class="breadcrumb">
+          <span class="seg">workspace</span> / <span class="seg">pages</span> /
+          <span class="cur">about.html</span>
         </div>
-        <div class="signal-row">
-          <a
-            href="https://github.com/chisom-cyprian"
-            target="_blank"
-            rel="noopener"
-            >github.com/chisom-cyprian</a
-          >
-          <span>Lagos, Nigeria</span>
-          <span>Open to remote internships</span>
-        </div>
-      </section>
 
-      <section class="buildlog wide">
-        <h2>Build log</h2>
-        <p class="sub">
-          A running record of what I've shipped, in the order I built it.
-        </p>
-
-        <div class="log-entry">
-          <div class="log-entry__date">Jun 2026</div>
-          <div class="log-entry__body">
-            <h3>RAG document chatbot</h3>
-            <p>
-              A retrieval-augmented chatbot that answers questions over uploaded
-              documents, deployed end to end.
+        <div class="hero">
+          <div style="flex: 1; min-width: 280px">
+            <span class="eyebrow">About</span>
+            <h1>HOW I GOT HERE, AND WHERE I'M HEADED</h1>
+            <p class="lede">
+              Educational Background, what I'm working toward, and the tools I
+              reach for.
             </p>
-            <ul class="stack-list">
-              <li>FastAPI</li>
-              <li>LangChain</li>
-              <li>ChromaDB</li>
-              <li>Gemini API</li>
-            </ul>
           </div>
+          <img src="profile.jpg" alt="Chisom Cyprian" class="hero__photo" />
         </div>
+        <section class="section">
+          <h2>Beyond the Screen</h2>
+          <p>
+            Two distinct passions driving my focus and energy outside of
+            software architecture.
+          </p>
 
-        <div class="log-entry">
-          <div class="log-entry__date">2026</div>
-          <div class="log-entry__body">
-            <h3>JPMC transaction processing</h3>
-            <p>
-              A simulated transaction processing system built for the JPMorgan
-              Chase Advanced Software Engineering program.
-            </p>
-            <ul class="stack-list">
-              <li>Java</li>
-              <li>Spring Boot</li>
-              <li>Backend Systems</li>
-            </ul>
+          <!-- Dual Video Dashboard Grid -->
+          <div class="video-grid">
+            <!-- Video Card 1: Space Engineering Hobby -->
+            <div class="video-workspace">
+              <div class="video-workspace__meta">
+                <span class="video-workspace__status-icon"></span>
+                <span class="video-workspace__filename">Space Video .mp4</span>
+                <span class="video-workspace__badge">NEW_HOBBY</span>
+              </div>
+
+              <div class="video-workspace__wrapper">
+                <!-- Removed autoplay and muted so you can check the audio natively -->
+                <video controls preload="metadata">
+                  <source src="Space Video .mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <p class="video-workspace__caption">
+                <strong>Space Engineering:</strong> A new hobby I absolutely
+                fell in love with. I enjoy diving deep into orbital mechanics,
+                trajectory mapping, and studying how software automation
+                controls aerospace hardware.
+              </p>
+            </div>
+
+            <!-- Video Card 2: Manchester United Passion -->
+            <div class="video-workspace">
+              <div class="video-workspace__meta">
+                <span
+                  class="video-workspace__status-icon"
+                  style="background-color: #da291c; box-shadow: 0 0 8px #da291c"
+                ></span>
+                <span class="video-workspace__filename">Club Video.mp4</span>
+                <span
+                  class="video-workspace__badge"
+                  style="color: #da291c; background: rgba(218, 41, 28, 0.1)"
+                  >MUFC_FAITHFUL</span
+                >
+              </div>
+
+              <div class="video-workspace__wrapper">
+                <!-- Removed autoplay and muted so you can check the audio natively -->
+                <video controls preload="metadata">
+                  <source src="Club Video.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <p class="video-workspace__caption">
+                <strong>Manchester United:</strong> A die-hard fan through and
+                through. Nothing matches the absolute adrenaline, tactical
+                depth, and legacy of supporting United on match days.
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
-        <div class="log-entry">
-          <div class="log-entry__date">2025</div>
-          <div class="log-entry__body">
-            <h3>CS50 AI portfolio</h3>
-            <p>
-              Twelve projects covering search, knowledge representation,
-              optimization, and machine learning, consolidated into one
-              repository.
-            </p>
-            <ul class="stack-list">
-              <li>Python</li>
-              <li>scikit-learn</li>
-              <li>Neural networks</li>
-            </ul>
+        <section class="section">
+          <h2>Educational background</h2>
+          <p>
+            I'm a Software Engineering student at Miva Open University, expected
+            to graduate in December 2028. My coursework covers web technologies,
+            object-oriented programming, and core computer science fundamentals,
+            which I pair with self-directed study in AI and backend engineering.
+          </p>
+          <p>
+            I built my early programming foundations through freeCodeCamp data
+            structures, OOP, lambda functions, string manipulation, and
+            debugging before specializing further into backend and AI work.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Where I'm headed</h2>
+          <p>
+            I'm building toward backend and AI engineering roles. Most of my
+            project work centers on Python FastAPI for APIs, LangChain for AI
+            application logic, and vector databases like ChromaDB for retrieval
+            systems. I'm also learning JavaScript and Node.js so I can work
+            comfortably across the stack.
+          </p>
+          <p>
+            Longer term, I'm interested in working internationally, and I'm
+            actively researching graduate study and remote internship paths to
+            get there.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Technical skills</h2>
+          <div class="grid grid--2">
+            <div class="card">
+              <h3>Languages &amp; frameworks</h3>
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">HTML / CSS</span>
+            </div>
+            <div class="card">
+              <h3>AI / ML &amp; tooling</h3>
+              <span class="tag">LangChain</span>
+              <span class="tag">ChromaDB</span>
+              <span class="tag">Gemini API</span>
+              <span class="tag">n8n</span>
+              <span class="tag">Git / GitHub</span>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
 
-    <footer class="site-footer">
+        <section class="section">
+          <h2>Outside of code</h2>
+          <ul>
+            <li>
+              Designing automation workflows in n8n gym tracking, AI voice
+              concierge agents, and similar small systems
+            </li>
+            <li>
+              Competitive programming practice through LeetCode and NeetCode 250
+            </li>
+            <li>
+              Reading up on cloud architecture and system design as I build
+              toward larger projects
+            </li>
+            <li>
+              Networking with people building in tech, on LinkedIn and beyond
+            </li>
+          </ul>
+        </section>
+
+        <footer class="site-footer">
   <div class="site-footer__inner">
     <span>© 2026 Chisom Cyprian</span>
     <span>Built with HTML, CSS &amp; JavaScript for COS 106</span>
   </div>
 </footer>
+      </main>
+    </div>
 
     <script src="site.js"></script>
   </body>
