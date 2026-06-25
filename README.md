@@ -1,9 +1,9 @@
-# Chisom Cyprian — Software Engineering Portfolio
+# Chisom Cyprian - Software Engineering Portfolio
 
 Welcome to my professional engineering portfolio. This repository contains the source code for my responsive, high-contrast dashboard web interface showcasing my software architecture journey, core academic foundations, and autonomous automation workflows. 
 
 ## 🚀 Live Demo
-🔗 **Live Production Site:** [chisom-cyprian.github.io](https://chisom-cyprian.github.io)
+🔗 **Live Production Site:** https://chisom-cyprian.vercel.app/
 
 ---
 
